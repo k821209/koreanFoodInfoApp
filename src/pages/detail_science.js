@@ -14,7 +14,7 @@ class Detail_science extends React.Component {
     state = initialState
     getFoodDetail = async (foodCd, foodNm) => {
         this.setState({ foodCd: foodCd, foodNm: foodNm })
-        const url = `http://cors.io/?https://tradifood.net/api/service/TradFoodInfoService/getFoodHealthScholarList?serviceKey=lLjoGCVK2fzZyHfHUXBIhIbHxQ8GhCmNpnKeFx4m4cfeUuneSaQMdhnxVeAcbN9CtEcRBnmMphI7zSwJL%2BJ7sg%3D%3D&pageNo=1&numOfRows=10&foodCd=${foodCd}&type=JSON&SG_APIM=2ug8Dm9qNBfD32JLZGPN64f3EoTlkpD8kSOHWfXpyrY`
+        const url = `https://cors-anywhere.herokuapp.com/https://tradifood.net/api/service/TradFoodInfoService/getFoodHealthScholarList?serviceKey=lLjoGCVK2fzZyHfHUXBIhIbHxQ8GhCmNpnKeFx4m4cfeUuneSaQMdhnxVeAcbN9CtEcRBnmMphI7zSwJL%2BJ7sg%3D%3D&pageNo=1&numOfRows=10&foodCd=${foodCd}&type=JSON&SG_APIM=2ug8Dm9qNBfD32JLZGPN64f3EoTlkpD8kSOHWfXpyrY`
         console.log(foodCd, url)
         try {
             const { data: { response: { body: { items: { item } } } } } = await axios.get(url)
