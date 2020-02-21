@@ -74,10 +74,10 @@ class Home extends React.Component {
             <Table collapsing style={{ width: '80%', top: '50%', left: '50%' }}>
               <Table.Header>
                 <Table.Row>
-                  <Table.HeaderCell width={1}>코드</Table.HeaderCell>
-                  <Table.HeaderCell width={1}>음식명</Table.HeaderCell>
-                  <Table.HeaderCell width={3}>분류</Table.HeaderCell>
-                  <Table.HeaderCell width={3}>정보</Table.HeaderCell>
+                  <Table.HeaderCell>코드</Table.HeaderCell>
+                  <Table.HeaderCell>음식명</Table.HeaderCell>
+                  <Table.HeaderCell>분류</Table.HeaderCell>
+                  <Table.HeaderCell>정보</Table.HeaderCell>
                 </Table.Row>
               </Table.Header>
               <Table.Body>
