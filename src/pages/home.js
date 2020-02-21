@@ -71,7 +71,7 @@ class Home extends React.Component {
         <Segment>
           <Header content='한국음식 목록' textAlign='center' />
           <center>
-            <Table collapsing style={{ width: '80%', top: '50%', left: '50%' }}>
+            <Table singleLine style={{ width: '80%', top: '50%', left: '50%' }}>
               <Table.Header>
                 <Table.Row>
                   <Table.HeaderCell>코드</Table.HeaderCell>

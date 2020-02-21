@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c95dc9048ee534c20e9be556a2e484ae",
+    "revision": "8c1402306fe8f27123fea01b0cd577e8",
     "url": "/koreanFoodInfoApp/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/koreanFoodInfoApp/static/css/2.d4b45361.chunk.css"
   },
   {
-    "revision": "441a90eadeff4d39b256",
+    "revision": "8480ae74ecb7a758d0fb",
     "url": "/koreanFoodInfoApp/static/css/main.5505dd2a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/koreanFoodInfoApp/static/js/2.28aee037.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "441a90eadeff4d39b256",
-    "url": "/koreanFoodInfoApp/static/js/main.e6c96231.chunk.js"
+    "revision": "8480ae74ecb7a758d0fb",
+    "url": "/koreanFoodInfoApp/static/js/main.7d2f49ce.chunk.js"
   },
   {
     "revision": "9ca91c2059addc552927",
