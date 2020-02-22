@@ -11,11 +11,15 @@ const initialState = {
   isLoading: true,
 }
 
+const userURL = 'https://cors-anywhere.herokuapp.com/'
+const apiURL = 'http://apis.data.go.kr/B551553/TradFoodInfoService'
+const preUrl = userURL + apiURL
+
 class Detail extends React.Component {
   state = initialState
   getFoodDetail = async (foodCd, foodNm) => {
     this.setState({ foodCd: foodCd, foodNm: foodNm })
-    const url = `https://cors-anywhere.herokuapp.com/http://apis.data.go.kr/B551553/TradFoodInfoService/getFoodHealthOriMediList?serviceKey=lLjoGCVK2fzZyHfHUXBIhIbHxQ8GhCmNpnKeFx4m4cfeUuneSaQMdhnxVeAcbN9CtEcRBnmMphI7zSwJL%2BJ7sg%3D%3D&pageNo=1&numOfRows=10&foodCd=${foodCd}&type=JSON&SG_APIM=2ug8Dm9qNBfD32JLZGPN64f3EoTlkpD8kSOHWfXpyrY`
+    const url = preUrl + `/getFoodHealthOriMediList?serviceKey=lLjoGCVK2fzZyHfHUXBIhIbHxQ8GhCmNpnKeFx4m4cfeUuneSaQMdhnxVeAcbN9CtEcRBnmMphI7zSwJL%2BJ7sg%3D%3D&pageNo=1&numOfRows=10&foodCd=${foodCd}&type=JSON&SG_APIM=2ug8Dm9qNBfD32JLZGPN64f3EoTlkpD8kSOHWfXpyrY`
     console.log(foodCd, url)
     try {
       const { data: { response: { body: { items: { item } } } } } = await axios.get(url)
