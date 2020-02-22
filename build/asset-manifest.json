@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/koreanFoodInfoApp/static/css/main.5505dd2a.chunk.css",
-    "main.js": "/koreanFoodInfoApp/static/js/main.d12d550b.chunk.js",
-    "main.js.map": "/koreanFoodInfoApp/static/js/main.d12d550b.chunk.js.map",
+    "main.js": "/koreanFoodInfoApp/static/js/main.1a1ded1a.chunk.js",
+    "main.js.map": "/koreanFoodInfoApp/static/js/main.1a1ded1a.chunk.js.map",
     "runtime-main.js": "/koreanFoodInfoApp/static/js/runtime-main.1a0f27c9.js",
     "runtime-main.js.map": "/koreanFoodInfoApp/static/js/runtime-main.1a0f27c9.js.map",
     "static/css/2.d4b45361.chunk.css": "/koreanFoodInfoApp/static/css/2.d4b45361.chunk.css",
     "static/js/2.2443f8c7.chunk.js": "/koreanFoodInfoApp/static/js/2.2443f8c7.chunk.js",
     "static/js/2.2443f8c7.chunk.js.map": "/koreanFoodInfoApp/static/js/2.2443f8c7.chunk.js.map",
     "index.html": "/koreanFoodInfoApp/index.html",
-    "precache-manifest.fe99728fdbb7f97f1a01cc58374711fa.js": "/koreanFoodInfoApp/precache-manifest.fe99728fdbb7f97f1a01cc58374711fa.js",
+    "precache-manifest.661a8826db93fc556839f512d0d95d92.js": "/koreanFoodInfoApp/precache-manifest.661a8826db93fc556839f512d0d95d92.js",
     "service-worker.js": "/koreanFoodInfoApp/service-worker.js",
     "static/css/2.d4b45361.chunk.css.map": "/koreanFoodInfoApp/static/css/2.d4b45361.chunk.css.map",
     "static/css/main.5505dd2a.chunk.css.map": "/koreanFoodInfoApp/static/css/main.5505dd2a.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.d4b45361.chunk.css",
     "static/js/2.2443f8c7.chunk.js",
     "static/css/main.5505dd2a.chunk.css",
-    "static/js/main.d12d550b.chunk.js"
+    "static/js/main.1a1ded1a.chunk.js"
   ]
 }

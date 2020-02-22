@@ -55,7 +55,7 @@ class Home extends React.Component {
         }
       }
     }
-      = await axios.get(`https://cors-anywhere.herokuapp.com/https://tradifood.net/api/service/TradFoodInfoService/getFoodCateogryList?serviceKey=lLjoGCVK2fzZyHfHUXBIhIbHxQ8GhCmNpnKeFx4m4cfeUuneSaQMdhnxVeAcbN9CtEcRBnmMphI7zSwJL%2BJ7sg%3D%3D&pageNo=${currentPage}&numOfRows=10&type=JSON&SG_APIM=2ug8Dm9qNBfD32JLZGPN64f3EoTlkpD8kSOHWfXpyrY`)
+      = await axios.get(`https://cors-anywhere.herokuapp.com/http://apis.data.go.kr/B551553/TradFoodInfoService/getFoodCateogryList?serviceKey=lLjoGCVK2fzZyHfHUXBIhIbHxQ8GhCmNpnKeFx4m4cfeUuneSaQMdhnxVeAcbN9CtEcRBnmMphI7zSwJL%2BJ7sg%3D%3D&pageNo=${currentPage}&numOfRows=10&type=JSON&SG_APIM=2ug8Dm9qNBfD32JLZGPN64f3EoTlkpD8kSOHWfXpyrY`)
     this.setState({ isLoading: false })
     // const foodNames = item.map(function(i){return i.foodNm})
     this.setState({ foodObjs: item })
