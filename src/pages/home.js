@@ -4,6 +4,7 @@ import '../App.css';
 import '../index.css';
 import axios from "axios"
 import ShowFood from "../routes/Foods"
+import SimpleTable from "../routes/Food_materialui"
 import {
   Header,
   Segment,
@@ -69,39 +70,10 @@ class Home extends React.Component {
     return (
       <Container style={{ marginTop: '0.5em' }} textAlign="center" >
         <Segment>
-          <Header content='한국음식 목록' textAlign='center' />
-          <center>
-            <Table singleLine style={{ width: '80%', top: '50%', left: '50%' }}>
-              <Table.Header>
-                <Table.Row>
-                  <Table.HeaderCell>코드</Table.HeaderCell>
-                  <Table.HeaderCell>음식명</Table.HeaderCell>
-                  <Table.HeaderCell>분류</Table.HeaderCell>
-                  <Table.HeaderCell>정보</Table.HeaderCell>
-                </Table.Row>
-              </Table.Header>
-              <Table.Body>
-                {isLoading
-                  ? "Loading..."
-                  : foodObjs.map(each => {
-                    return (
-                      <ShowFood
-                        key={each.foodCd}
-                        foodCd={each.foodCd}
-                        foodNm={each.foodNm}
-                        foodKindNm={each.foodKindNm}
-                        largeCls={each.largeClsNm}
-                        middleCls={each.middleClsNm}
-                        smallCls={each.smallClsNm}
-                      />
-                    )
-                  })
-                }
-              </Table.Body>
-            </Table>
-          </center>
+          {isLoading ? "Loading..." : <SimpleTable foodObjs={foodObjs}/>}
         </Segment>
         <Pagination onPageChange={this.changePage} style={{ marginBottom: '1em' }} defaultActivePage={1} totalPages={353} />
+
       </Container>
     );
   }
