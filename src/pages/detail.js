@@ -19,7 +19,7 @@ class Detail extends React.Component {
     try {
       const { data: { response: { body: { items: { item } } } } } = await axios.get(url)
       console.log('loading')
-      this.setState({ foodObj: item, loaded: true, foodCd: foodCd, foodNm: foodNm })
+      await this.setState({ foodObj: item, loaded: true, foodCd: foodCd, foodNm: foodNm })
 
     }
     catch (e) {
