@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/koreanFoodInfoApp/precache-manifest.489a7653def2480975c59324af95d578.js"
+  "/koreanFoodInfoApp/precache-manifest.da631cb22d7dd1987f3245e1b428e318.js"
 );
 
 self.addEventListener('message', (event) => {

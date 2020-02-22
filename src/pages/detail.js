@@ -8,6 +8,7 @@ const initialState = {
   foodNm: '',
   foodObj: [],
   loaded: false,
+  isLoading: true,
 }
 
 class Detail extends React.Component {
@@ -18,15 +19,15 @@ class Detail extends React.Component {
     console.log(foodCd, url)
     try {
       const { data: { response: { body: { items: { item } } } } } = await axios.get(url)
+      this.setState({ foodObj: item, loaded: true, foodCd: foodCd, foodNm: foodNm, isLoading: false })
       console.log('loading')
-      await this.setState({ foodObj: item, loaded: true, foodCd: foodCd, foodNm: foodNm })
 
     }
     catch (e) {
       //const { location, history } = this.props;
       //history.push("/");
       console.log('getFoodDetail_error_1')
-      this.setState({ loaded: false })
+      this.setState({ loaded: false, isLoading: false })
 
     }
 
@@ -56,12 +57,8 @@ class Detail extends React.Component {
       history.push("/");
     }
     else {
-      this.setState({
-        foodCd: location.state.foodCd,
-        foodNm: location.state.foodNm,
-      })
       this.getFoodDetail(location.state.foodCd, location.state.foodNm);
-      console.log('didmount2', this.state)
+      //console.log('didmount2', this.state)
     }
 
   }
@@ -99,7 +96,7 @@ class Detail extends React.Component {
   //}  
   render() {
     let showText;
-    const { update, foodCd, foodNm, foodObj, loaded } = this.state;
+    const { update, foodCd, foodNm, foodObj, loaded, isLoading } = this.state;
     console.log('render', this.state)
     if (loaded === true) {
       showText = <Message>
@@ -109,12 +106,23 @@ class Detail extends React.Component {
         {foodObj.map(this.showContent)}
       </Message>
     } else {
-      showText = <Message>
-        <MessageHeader>
-          {foodNm}({foodCd})
+      if (isLoading === true) {
+        showText = <Message>
+          <MessageHeader>
+            {console.log('render loading.. ')}
+            {foodNm}({foodCd})
                     </MessageHeader><br></br>
-        <p> 해당 정보가 데이터베이스에 없습니다.</p>
+          <p> Loading... </p>
       </Message>
+      } else {
+        showText = <Message>
+          <MessageHeader>
+            {console.log('not found')}
+            {foodNm}({foodCd})
+                    </MessageHeader><br></br>
+          <p> 해당 정보가 데이터베이스에 없습니다.</p>
+      </Message>
+      }
     }
     return (
       <Container style={{ marginTop: "0.5em" }}>
