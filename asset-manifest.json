@@ -1,27 +1,27 @@
 {
   "files": {
     "main.css": "/koreanFoodInfoApp/static/css/main.5505dd2a.chunk.css",
-    "main.js": "/koreanFoodInfoApp/static/js/main.bb92c627.chunk.js",
-    "main.js.map": "/koreanFoodInfoApp/static/js/main.bb92c627.chunk.js.map",
+    "main.js": "/koreanFoodInfoApp/static/js/main.8bd89531.chunk.js",
+    "main.js.map": "/koreanFoodInfoApp/static/js/main.8bd89531.chunk.js.map",
     "runtime-main.js": "/koreanFoodInfoApp/static/js/runtime-main.1a0f27c9.js",
     "runtime-main.js.map": "/koreanFoodInfoApp/static/js/runtime-main.1a0f27c9.js.map",
     "static/css/2.d4b45361.chunk.css": "/koreanFoodInfoApp/static/css/2.d4b45361.chunk.css",
-    "static/js/2.28aee037.chunk.js": "/koreanFoodInfoApp/static/js/2.28aee037.chunk.js",
-    "static/js/2.28aee037.chunk.js.map": "/koreanFoodInfoApp/static/js/2.28aee037.chunk.js.map",
+    "static/js/2.2443f8c7.chunk.js": "/koreanFoodInfoApp/static/js/2.2443f8c7.chunk.js",
+    "static/js/2.2443f8c7.chunk.js.map": "/koreanFoodInfoApp/static/js/2.2443f8c7.chunk.js.map",
     "index.html": "/koreanFoodInfoApp/index.html",
-    "precache-manifest.da631cb22d7dd1987f3245e1b428e318.js": "/koreanFoodInfoApp/precache-manifest.da631cb22d7dd1987f3245e1b428e318.js",
+    "precache-manifest.331cf53672c0c2de405515f86c805103.js": "/koreanFoodInfoApp/precache-manifest.331cf53672c0c2de405515f86c805103.js",
     "service-worker.js": "/koreanFoodInfoApp/service-worker.js",
     "static/css/2.d4b45361.chunk.css.map": "/koreanFoodInfoApp/static/css/2.d4b45361.chunk.css.map",
     "static/css/main.5505dd2a.chunk.css.map": "/koreanFoodInfoApp/static/css/main.5505dd2a.chunk.css.map",
-    "static/js/2.28aee037.chunk.js.LICENSE.txt": "/koreanFoodInfoApp/static/js/2.28aee037.chunk.js.LICENSE.txt",
+    "static/js/2.2443f8c7.chunk.js.LICENSE.txt": "/koreanFoodInfoApp/static/js/2.2443f8c7.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/koreanFoodInfoApp/static/media/outline-icons.ef60a4f6.woff",
     "static/media/logo.svg": "/koreanFoodInfoApp/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1a0f27c9.js",
     "static/css/2.d4b45361.chunk.css",
-    "static/js/2.28aee037.chunk.js",
+    "static/js/2.2443f8c7.chunk.js",
     "static/css/main.5505dd2a.chunk.css",
-    "static/js/main.bb92c627.chunk.js"
+    "static/js/main.8bd89531.chunk.js"
   ]
 }
